@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph1"
+    app:startDestination="@id/videoCallFragment">
+
+    <fragment
+        android:id="@+id/videoCallFragment"
+        android:name="com.plcoding.daggerscopes.ui.VideoCallFragment"
+        android:label="VideoCallFragment" >
+        <action
+            android:id="@+id/action_videoCallFragment_to_callInfoFragment"
+            app:destination="@id/callInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/callInfoFragment"
+        android:name="com.plcoding.daggerscopes.ui.CallInfoFragment"
+        android:label="CallInfoFragment" />
+</navigation>
